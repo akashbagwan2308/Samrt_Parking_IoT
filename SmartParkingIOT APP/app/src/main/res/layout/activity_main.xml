@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-11dp">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="›"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="‹"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <LinearLayout
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:background="@drawable/slot"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705">
+
+        <ImageView
+            android:id="@+id/imageViewSlot03"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:srcCompat="@drawable/default_parking" />
+
+        <TextView
+            android:id="@+id/textViewSlot03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="03   "
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="606dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:background="@drawable/slot"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705">
+
+        <ImageView
+            android:id="@+id/imageViewSlot08"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:rotationY="180"
+            app:srcCompat="@drawable/default_parking" />
+
+        <TextView
+            android:id="@+id/textViewSlot08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  08"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="606dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:background="@drawable/slot"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822">
+
+        <ImageView
+            android:id="@+id/imageViewSlot04"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:srcCompat="@drawable/default_parking" />
+
+        <TextView
+            android:id="@+id/textViewSlot04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="04   "
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="606dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:background="@drawable/slot"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822">
+
+        <ImageView
+            android:id="@+id/imageViewSlot09"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:rotationY="180"
+            app:srcCompat="@drawable/default_parking" />
+
+        <TextView
+            android:id="@+id/textViewSlot09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  09"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="606dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:background="@drawable/slot"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461">
+
+        <ImageView
+            android:id="@+id/imageViewSlot01"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:srcCompat="@drawable/default_parking" />
+
+        <TextView
+            android:id="@+id/textViewSlot01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="01   "
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="606dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A1"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <LinearLayout
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:background="@drawable/slot"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941">
+
+        <ImageView
+            android:id="@+id/imageViewSlot05"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:srcCompat="@drawable/default_parking" />
+
+        <TextView
+            android:id="@+id/textViewSlot05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="05   "
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="606dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:background="@drawable/slot"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584">
+
+        <ImageView
+            android:id="@+id/imageViewSlot07"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:rotationY="180"
+            app:srcCompat="@drawable/default_parking" />
+
+        <TextView
+            android:id="@+id/textViewSlot07"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  07"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="606dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:background="@drawable/slot"
+        android:clickable="true"
+
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941">
+
+        <ImageView
+            android:id="@+id/imageViewSlot10"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:rotationY="180"
+            app:srcCompat="@drawable/default_parking" />
+
+        <TextView
+            android:id="@+id/textViewSlot10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  10"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="606dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <LinearLayout
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:background="@drawable/slot"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461">
+
+        <ImageView
+            android:id="@+id/imageViewSlot06"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:rotationY="180"
+            app:srcCompat="@drawable/default_parking" />
+
+        <TextView
+            android:id="@+id/textViewSlot06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  06"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="606dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:background="@drawable/slot"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584">
+
+        <ImageView
+            android:id="@+id/imageViewSlot02"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:srcCompat="@drawable/default_parking" />
+
+        <TextView
+            android:id="@+id/textViewSlot02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="02   "
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="606dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="226dp"
+        android:layout_height="45dp"
+        android:elevation="10dp"
+        android:shadowDy="10"
+        android:text="Ground Floor"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <TextView
+        android:id="@+id/textViewTotalSlots"
+        android:layout_width="51dp"
+        android:layout_height="21dp"
+        android:gravity="center|right"
+        android:text="10"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="411dp"
+        android:layout_height="54dp"
+        android:background="#2A69ED"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:shadowColor="#000000"
+        android:shadowDx="50"
+        android:text="  Smart Parking IoT"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="166dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/parking" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="184dp"
+        android:layout_height="22dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FF3636"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

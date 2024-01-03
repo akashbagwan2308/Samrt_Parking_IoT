@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "487447545525",
+    "firebase_url": "https://smart-parking-iot-b304b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "smart-parking-iot-b304b",
+    "storage_bucket": "smart-parking-iot-b304b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487447545525:android:f7e74677be89386987e0fc",
+        "android_client_info": {
+          "package_name": "com.example.smartparkingiot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmDCnrysbXsl1_qIkaEl8QXsPIRuuXN1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
