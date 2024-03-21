@@ -1,17 +1,25 @@
-# IoT-BASED CAR PARKING SYSTEM
+# **<p align="center">IoT-BASED CAR PARKING SYSTEM</p>**
 
-## Introduction
-An IoT-based car parking system is a type of intelligent transportation system (ITS) that utilizes technology to optimize parking availability and efficiency. It typically consists of a network of sensors, cameras, databases, and software to detect and track vehicles in a parking lot. This data is used to provide real-time information to drivers about available parking spaces and guide them to the nearest open spot on their device. The goal of Smart Parking System (SPS) is to reduce congestion, enhance safety, and provide convenience for drivers.
+## Developed By: 
 
-## Block Diagram
+- **Akash Bagwan** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akashbagwan/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](akashbagwan01@gmail.com)
+
+- **Jay Barode** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaybarode728/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](barodejay468@gmail.com)
+
+- **Surendra Prajapat** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/surendraprajapat18/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](prajapatsurendra78980@gmail.com)
+
+## Introduction:
+An IoT-powered car parking system is an intelligent transportation system (ITS) that uses technology to optimize parking availability and efficiency. It typically comprises a network of sensors, cameras, databases, and software that detect and track vehicles in a parking lot. This information is then utilized to provide drivers with real-time updates on available parking slots and guide them to the nearest open spot using their device. The Smart Parking System (SPS) aims to reduce traffic congestion, enhance safety, and provide convenience for drivers.
+
+## Block Diagram:
 
 <p align="center">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/0e9dd9d4-ac35-4885-9fa6-c3042e7f03d5" width="700" height="400">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/0e9dd9d4-ac35-4885-9fa6-c3042e7f03d5" width="800" height="400">
 </p>
 
-**<p align="center">Block Diagram</p>**
+### **<p align="center">Block Diagram</p>**
 
-### Description of Block Diagram
+### Description of Block Diagram:
 
 The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors, LCD Display, and a servo motor illustrates how the different components work together to detect the presence of vehicles in parking spaces and control the movement of a barrier to allow or deny access and update the data on a cloud database.
 
@@ -21,32 +29,36 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
 4. Once the vehicle has entered the parking space and parked, the IR sensor at the entrance detects its presence and sends a signal to the ESP-32.
 5. The ESP-32 then updates the record of available parking spaces and sends it to the database over the Internet.
 6. When the vehicle exits the parking space, the IR sensor at the exit detects its presence and sends a signal to the ESP-32.
-7. The ESP-32 then sends a signal to the servo motor to open the barrier and increase the count of available slots by one and update the database also.
+7. The ESP-32 then sends a signal to the servo motor to open the barrier increase the count of available slots by one and update the database also.
 8. This process is repeated for all vehicles that enter and exit the parking space.
 
-## Components Used
+## Components Used:
+- **Hardware:**
+  - ESP-32
+  - 16x2 LCD
+  - I2C Module
+  - IR Sensor
+  - Servo SG90
+  - RGB LEDs
+  - BC337 Transistor
+  - Resistors
+  - Toggle Switch
+  - Zero PCB
+  - Power Adapter (5V 2A)
+    
+- **Software:**
+  - Arduino IDE
+  - Firebase Database
 
-- ESP-32
-- 16x2 LCD
-- I2C Module
-- IR Sensor
-- Servo SG90
-- RGB LEDs
-- BC337 Transistor
-- Resistors
-- Toggle Switch
-- Zero PCB
-- Power Adapter (5V 2A)
-
-## Circuit Diagram
+## Circuit Diagram:
 
 <p align="center">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/a7c51645-0e90-4ebf-91f4-61aede5d21f7" width="700" height="400">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/a7c51645-0e90-4ebf-91f4-61aede5d21f7" width="800" height="400">
 </p>
 
-**<p align="center">Circuit Diagram</p>**
+### **<p align="center">Circuit Diagram</p>**
 
-### Pin Connections
+### Pin Connections:
 
 - **ESP-32 to IR Sensor**:
   - ESP-32 Pin 34 – Out pin of IR 1
@@ -69,7 +81,7 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
 - **ESP-32 to Buzzer**:
   - ESP-32 Pin 04 – Pin of Buzzer
 
-## PCB Layout and Circuit Diagram
+## PCB Layout and Circuit Diagram:
 
 <p align="center">
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/935ce74a-7230-4890-ba88-45e9d2149736" width="300" height="250">
@@ -77,11 +89,9 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/5900b484-0f81-4484-9b03-203ed079ce6e" width="300" height="250">
 </p>
 
-**<p align="center">PCB Layout and Circuit Diagram</p>**
+### **<p align="center">PCB Layout and Circuit Diagram</p>**
 
-The above circuit is designed for a special purpose, when the parking slot is empty/Available there be a green LED turned on and when the parking slot is filled/Engaged green 
-led turned off and the red LED will turn on. For this, we use the BC337 transistor for switching and designing one NOT Gate. The switching of LEDs is done on the basis of data coming 
-from the IR Sensor used at the slot. Hence for 10 slots, we made 10 copies of this circuit module which takes input from those 10 IR sensor modules and works accordingly.
+The circuit presented above serves a specific purpose, to detect parking slot availability. When the parking slot is **empty**, a **green LED** turns on, and when the slot is **occupied**, the green LED turns off and the **red LED** turns on. This is achieved by using the BC337 transistor for switching and designing one NOT Gate. The LEDs are switched based on the data obtained from an IR Sensor placed at the slot. To cover 10 parking slots, we created 10 replicas of this circuit module, which receives input from the respective IR sensor module and acts accordingly.
 
 
 In the provided code snippet, several important parts can be identified:
@@ -136,21 +146,30 @@ void ServoStatus() {
 }
 ```
 
-[![Code](https://img.shields.io/badge/Code-%230077B5.svg?logo=arduino&logoColor=white)](https://github.com/akashbagwan2308/Samrt_Parking_IoT/blob/main/Smart_Parking_Arduino_Code_ESP32.ino)
+[![Full_Code](https://img.shields.io/badge/Full_Code-%230077B5.svg?logo=arduino&logoColor=white)](https://github.com/akashbagwan2308/Samrt_Parking_IoT/blob/main/Smart_Parking_Arduino_Code_ESP32.ino)
 
 
-
-## Result
+## Result:
 
 <p align="center">
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/6434d874-4e74-4e3f-8843-39c67329cd50" width="300" height="400">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/94291763-9d5f-4e31-a930-8d3ad96a2322" width="300" height="450>
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/a15ca11f-4651-48df-8031-c5d033cda9b7" width="300" height="450>
 </p>
 
-**<p align="center">Result</p>**
+### **<p align="center">Result(Parking & Iot App)</p>**
 
-The above picture shows the result that we got after successful completion of project.
-This shows that when a particular slot is Engaged in parking lot, same slot  displayed as Engaged in android application and Red Led glows when slot is Engaged by default 
-when slot is Available Green Led will glow.
+The picture above depicts the outcome we obtained upon the successful completion of our project. Our system is designed to display the status of a parking slot on both the Android application and a physical LED. When a slot is occupied, it is displayed as "**Engaged**" on the Android app and the corresponding LED glows red. Conversely, when a slot is free, it is displayed as "**Available**" on the app and the LED glows green.
+
+## References: 
+    1. Aggarwal, S. (2011). Smart Parking System using Sensors and Networking Technologies. International Journal of Electronics and Computer Science Engineering (IJECSE), 1(2), 1-8.
+    2. Kumar, S. (2023). Smart Car Parking System. International Journal for Research in Applied Science and Engineering Technology (IJRASTE), 11(5), 707-711.
+
+    Articles
+    4. Harnessing Technology to Solve Urban Parking Woes: The Rise of Smart Parking Systems
+    5. A City Transformed: The Impact of Smart Parking Systems on Urban Traffic and Congestion
+
+    Text Books
+    6. Programming Arduino: Getting Started With Sketches (second edition) 
+    7. Servo Motors and Industrial Control Theor
 
 
