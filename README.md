@@ -9,7 +9,7 @@ An IoT-powered smart parking system is an intelligent transportation system (ITS
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/0e9dd9d4-ac35-4885-9fa6-c3042e7f03d5" width="750" height="400">
 </p>
 
-### **<p align="center">Block Diagram</p>**
+### <p align="center">Block Diagram</p>
 
 ### Description of Block Diagram:
 
@@ -18,7 +18,7 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
 1. The IR sensors are placed at the entrance and exit of the parking space.
 2. When a vehicle enters the parking space, the IR sensor at the entrance detects its presence and sends a signal to the ESP-32.
 3. The ESP-32 then checks if there is any available parking space. If there is, it sends a signal to the servo motor to open the barrier and allow the vehicle to enter and decrease the count of available slots by one and display it on LCD.
-4. Once the vehicle has entered the parking space and parked, the IR sensor at the entrance detects its presence and sends a signal to the ESP-32.
+4. Once the vehicle has entered the parking space and get parked, the IR sensor at the entrance detects its presence and sends a signal to the ESP-32.
 5. The ESP-32 then updates the record of available parking spaces and sends it to the database over the Internet.
 6. When the vehicle exits the parking space, the IR sensor at the exit detects its presence and sends a signal to the ESP-32.
 7. The ESP-32 then sends a signal to the servo motor to open the barrier increase the count of available slots by one and update the database also.
@@ -48,7 +48,7 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/a7c51645-0e90-4ebf-91f4-61aede5d21f7" width="750" height="400">
 </p>
 
-### **<p align="center">Circuit Diagram</p>**
+### <p align="center">Circuit Diagram</p>
 
 ### Pin Connections:
 
