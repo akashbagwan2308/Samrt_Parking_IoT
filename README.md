@@ -170,8 +170,10 @@ Our IoT-Based Smart Parking System represents a significant advancement in parki
 
 ## Developed By: 
 
-- **Akash Bagwan** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akashbagwan/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](akashbagwan01@gmail.com)
+- **Akash Bagwan** [![LinkedIn](https://img.shields.io/badge/-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akashbagwan/) [![Gmail](https://img.shields.io/badge/-%230077B5.svg?logo=gmail&logoColor=white)](akashbagwan01@gmail.com)
 
-- **Jay Barode** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaybarode728/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](barodejay468@gmail.com)
+- **Jay Barode** [![LinkedIn](https://img.shields.io/badge/-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaybarode728/) [![Gmail](https://img.shields.io/badge/-%230077B5.svg?logo=gmail&logoColor=white)](barodejay468@gmail.com)
 
-- **Surendra Prajapat** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/surendraprajapat18/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](prajapatsurendra78980@gmail.com)
+- **Surendra Prajapat** [![LinkedIn](https://img.shields.io/badge/-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/surendraprajapat18/) [![Gmail](https://img.shields.io/badge/-%230077B5.svg?logo=gmail&logoColor=white)](prajapatsurendra78980@gmail.com)
+
+### For more information check this: [![LinkedIn](https://img.shields.io/badge/PDF-%230077B5.svg?logo=files&logoColor=white)](https://github.com/akashbagwan2308/Samrt_Parking_IoT/blob/main/Supportive%20Document/IoT%20Based%20Smart%20Parking%20File.pdf)
