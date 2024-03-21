@@ -136,4 +136,21 @@ void ServoStatus() {
 }
 ```
 
-[Smart Parking Arduino Code (ESP32)](https://github.com/akashbagwan2308/Samrt_Parking_IoT/blob/main/Smart_Parking_Arduino_Code_ESP32.ino)
+[![Code](https://img.shields.io/badge/Code-%230077B5.svg?logo=arduino&logoColor=white)](https://github.com/akashbagwan2308/Samrt_Parking_IoT/blob/main/Smart_Parking_Arduino_Code_ESP32.ino)
+
+
+
+## Result
+
+<p align="center">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/6434d874-4e74-4e3f-8843-39c67329cd50" width="300" height="400">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/94291763-9d5f-4e31-a930-8d3ad96a2322" width="300" height="450>
+</p>
+
+**<p align="center">Result</p>**
+
+The above picture shows the result that we got after successful completion of project.
+This shows that when a particular slot is Engaged in parking lot, same slot  displayed as Engaged in android application and Red Led glows when slot is Engaged by default 
+when slot is Available Green Led will glow.
+
+
