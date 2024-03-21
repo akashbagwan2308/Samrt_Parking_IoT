@@ -1,4 +1,4 @@
-# **<p align="center">IoT-BASED CAR PARKING SYSTEM</p>**
+# **<p align="center">IoT-BASED Smart PARKING </p>**
 
 ## Introduction:
 An IoT-powered car parking system is an intelligent transportation system (ITS) that uses technology to optimize parking availability and efficiency. It typically comprises a network of sensors, cameras, databases, and software that detect and track vehicles in a parking lot. This information is then utilized to provide drivers with real-time updates on available parking slots and guide them to the nearest open spot using their device. The Smart Parking System (SPS) aims to reduce traffic congestion, enhance safety, and provide convenience for drivers.
