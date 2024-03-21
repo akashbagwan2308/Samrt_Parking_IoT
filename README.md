@@ -1,7 +1,7 @@
 # **<p align="center">IoT-BASED SMART PARKING </p>**
 
 ## Introduction:
-An IoT-powered smart parking system is an intelligent transportation system (ITS) that uses technology to optimize parking availability and efficiency. It typically comprises a network of sensors, cameras, databases, and software that detect and track vehicles in a parking lot. This information is then utilized to provide drivers with real-time updates on available parking slots and guide them to the nearest open spot using their device. The Smart Parking System (SPS) aims to reduce traffic congestion, enhance safety, and provide convenience for drivers.
+An IoT-powered smart parking system is an intelligent transportation system (ITS) that uses technology to optimize parking availability and efficiency. It typically comprises a network of sensors, cameras, database and software that detect and track vehicles in the parking lot. This information is then utilized to provide drivers with real-time updates on available parking slots and guide them to the nearest open spot using their device. The Smart Parking System (SPS) aims to reduce traffic congestion, enhance safety, and provide convenience for drivers.
 
 ## Block Diagram:
 
@@ -25,7 +25,7 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
 8. This process is repeated for all vehicles that enter and exit the parking space.
 
 ## Components Used:
-- **Hardware:**
+- Hardware:
   - ESP-32
   - 16x2 LCD
   - I2C Module
@@ -38,7 +38,7 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
   - Zero PCB
   - Power Adapter (5V 2A)
     
-- **Software:**
+- Software:
   - Arduino IDE
   - Firebase Database
 
@@ -52,7 +52,7 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
 
 ### Pin Connections:
 
-- **ESP-32 to IR Sensor**:
+- ESP-32 to IR Sensor:
   - ESP-32 Pin 34 – Out pin of IR 1
   - ESP-32 Pin 35 – Out pin of IR 2
   - ESP-32 Pin 32 – Out pin of IR 3
@@ -66,11 +66,11 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
   - ESP-32 Pin 26 – Out pin of IR Entry
   - ESP-32 Pin 27 – Out pin of IR Exit
 
-- **ESP-32 to Servo Motor**:
+- ESP-32 to Servo Motor:
   - ESP-32 Pin 14 – Signal pin of IR Servo_Entry
   - ESP-32 Pin 12 – Signal pin of IR Servo_Exit
 
-- **ESP-32 to Buzzer**:
+- ESP-32 to Buzzer:
   - ESP-32 Pin 04 – Pin of Buzzer
 
 ## PCB Layout and Circuit Diagram:
@@ -81,7 +81,7 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/5900b484-0f81-4484-9b03-203ed079ce6e" width="250" height="250">
 </p>
 
-### **<p align="center">PCB Layout and Circuit Diagram</p>**
+### <p align="center">PCB Layout and Circuit Diagram</p>
 
 The circuit presented above serves a specific purpose, to detect parking slot availability. When the parking slot is **empty**, a **green LED** turns on, and when the slot is **occupied**, the green LED turns off and the **red LED** turns on. This is achieved by using the BC337 transistor for switching and designing one NOT Gate. The LEDs are switched based on the data obtained from an IR Sensor placed at the slot. To cover 10 parking slots, we created 10 replicas of this circuit module, which receives input from the respective IR sensor module and acts accordingly.
 
@@ -147,7 +147,7 @@ void ServoStatus() {
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/a15ca11f-4651-48df-8031-c5d033cda9b7" width="300" height="450>
 </p>
 
-### **<p align="center">Result(Parking & Iot App)</p>**
+### <p align="center">Result(Parking & Iot App)</p>
 
 The picture above depicts the outcome we obtained upon the successful completion of our project. Our system is designed to display the status of a parking slot on both the Android application and a physical LED. When a slot is occupied, it is displayed as "**Engaged**" on the Android app and the corresponding LED glows red. Conversely, when a slot is free, it is displayed as "**Available**" on the app and the LED glows green.
 
@@ -170,10 +170,10 @@ Our IoT-Based Smart Parking System represents a significant advancement in parki
 
 ## Developed By: 
 
-- **Akash Bagwan** [![LinkedIn](https://img.shields.io/badge/-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akashbagwan/) [![Gmail](https://img.shields.io/badge/-%230077B5.svg?logo=gmail&logoColor=white)](akashbagwan01@gmail.com)
+- Akash Bagwan [![LinkedIn](https://img.shields.io/badge/-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akashbagwan/) [![Gmail](https://img.shields.io/badge/-%230077B5.svg?logo=gmail&logoColor=white)](akashbagwan01@gmail.com)
 
-- **Jay Barode** [![LinkedIn](https://img.shields.io/badge/-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaybarode728/) [![Gmail](https://img.shields.io/badge/-%230077B5.svg?logo=gmail&logoColor=white)](barodejay468@gmail.com)
+- Jay Barode [![LinkedIn](https://img.shields.io/badge/-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaybarode728/) [![Gmail](https://img.shields.io/badge/-%230077B5.svg?logo=gmail&logoColor=white)](barodejay468@gmail.com)
 
-- **Surendra Prajapat** [![LinkedIn](https://img.shields.io/badge/-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/surendraprajapat18/) [![Gmail](https://img.shields.io/badge/-%230077B5.svg?logo=gmail&logoColor=white)](prajapatsurendra78980@gmail.com)
+- Surendra Prajapat [![LinkedIn](https://img.shields.io/badge/-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/surendraprajapat18/) [![Gmail](https://img.shields.io/badge/-%230077B5.svg?logo=gmail&logoColor=white)](prajapatsurendra78980@gmail.com)
 
 ### For more information check this: [![LinkedIn](https://img.shields.io/badge/PDF-%230077B5.svg?logo=files&logoColor=white)](https://github.com/akashbagwan2308/Samrt_Parking_IoT/blob/main/Supportive%20Document/IoT%20Based%20Smart%20Parking%20File.pdf)
