@@ -1,7 +1,7 @@
-# **<p align="center">IoT-BASED Smart PARKING </p>**
+# **<p align="center">IoT-BASED SMART PARKING </p>**
 
 ## Introduction:
-An IoT-powered car parking system is an intelligent transportation system (ITS) that uses technology to optimize parking availability and efficiency. It typically comprises a network of sensors, cameras, databases, and software that detect and track vehicles in a parking lot. This information is then utilized to provide drivers with real-time updates on available parking slots and guide them to the nearest open spot using their device. The Smart Parking System (SPS) aims to reduce traffic congestion, enhance safety, and provide convenience for drivers.
+An IoT-powered smart parking system is an intelligent transportation system (ITS) that uses technology to optimize parking availability and efficiency. It typically comprises a network of sensors, cameras, databases, and software that detect and track vehicles in a parking lot. This information is then utilized to provide drivers with real-time updates on available parking slots and guide them to the nearest open spot using their device. The Smart Parking System (SPS) aims to reduce traffic congestion, enhance safety, and provide convenience for drivers.
 
 ## Block Diagram:
 
@@ -153,7 +153,7 @@ The picture above depicts the outcome we obtained upon the successful completion
 
 
 ## Conclusion:
-Our IoT-Based Car Parking System represents a significant advancement in parking management technology. By harnessing the power of IoT, we have created a solution that addresses the challenges of urban parking while improving efficiency, safety, and user convenience. As cities continue to grow, innovative solutions like ours will play a crucial role in shaping the future of urban mobility.
+Our IoT-Based Smart Parking System represents a significant advancement in parking management technology. By harnessing the power of IoT, we have created a solution that addresses the challenges of urban parking while improving efficiency, safety, and user convenience. As cities continue to grow, innovative solutions like ours will play a crucial role in shaping the future of urban mobility.
 
 ## References: 
     1. Aggarwal, S. (2011). Smart Parking System using Sensors and Networking Technologies. International Journal of Electronics and Computer Science Engineering (IJECSE), 1(2), 1-8.
