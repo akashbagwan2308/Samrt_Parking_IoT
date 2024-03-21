@@ -1,35 +1,44 @@
 
+
 #include <Arduino.h>
 #include <WiFi.h>
-#include <FirebaseESP-32.h>
+#include <FirebaseESP32.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
-#include <ESP-32Servo.h>
+#include <ESP32Servo.h>
 
+// Provide the token generation process info.
 #include <addons/TokenHelper.h>
+
+// Provide the RTDB payload printing info and other helper functions.
 #include <addons/RTDBHelper.h>
 
 /* 1. Define the WiFi credentials */
-#define WIFI_SSID "WiFi Name"
-#define WIFI_PASSWORD "WiFi Password"
+#define WIFI_SSID "Your Wi-Fi Name"
+#define WIFI_PASSWORD "Password"
+
+// For the following credentials, see examples/Authentications/SignInAsUser/EmailPassword/EmailPassword.ino
 
 /* 2. Define the API Key */
-#define API_KEY "Your web api key"
+#define API_KEY "Your Web API Key”
 
 /* 3. Define the RTDB URL */
-#define DATABASE_URL "your database link" 
+#define DATABASE_URL "Your Databse Link" //<databaseName>.firebaseio.com or <databaseName>.<region>.firebasedatabase.app
 
 /* 4. Define the user Email and password that alreadey registerd or added in your project */
-#define USER_EMAIL " user Email "
-#define USER_PASSWORD " password "
+#define USER_EMAIL "your email id "
+#define USER_PASSWORD "your defined password in firebase"
 
 // Define Firebase Data object
 FirebaseData fbdo;
+
 FirebaseAuth auth;
 FirebaseConfig config;
 
 unsigned long sendDataPrevMillis = 0;
+
 unsigned long count = 0;
+
 #define slot_1 34
 #define slot_2 35
 #define slot_3 32
@@ -49,6 +58,7 @@ unsigned long count = 0;
 /* ----------------------------------------------------- */
 String line1 = " Welcome! "; // stationary 
 String line2 = " Its an IoT Based Smart Parking. Developed by: Akash Bagwan,Jay Barode,Surendra Prajapat. ";
+
 
 int screenWidth = 16;
 int screenHeight = 2;
@@ -77,7 +87,9 @@ int S_total = 0;
 int counter = 0;
 /* ----------------------------------------------------- */
 void setup()
-{ Serial.begin(115200);
+{
+
+  Serial.begin(115200);
   LCD.begin();
   LCD.backlight();
 
@@ -93,6 +105,8 @@ void setup()
   
   if (WiFi.status() != WL_CONNECTED) {
     Serial.println("\nFailed to connect to Wi-Fi. Skipping Firebase setup.");
+    // You can add your alternative action here, like setting up a local server or going to a specific mode.
+    // For now, I'm just continuing with the setup.
     LCD.setCursor(0, 1);
     LCD.print("Failed");
     delay(800);
@@ -114,14 +128,19 @@ void setup()
   /* Assign the api key (required) */
   config.api_key = API_KEY;
 
+  /* Assign the user sign in credentials */
   auth.user.email = USER_EMAIL;
   auth.user.password = USER_PASSWORD;
   
+  /* Assign the RTDB URL (required) */
   config.database_url = DATABASE_URL;
-  config.token_status_callback = tokenStatusCallback; 
+  /* Assign the callback function for the long running token generation task */
+  config.token_status_callback = tokenStatusCallback; // see addons/TokenHelper.h
+  // Comment or pass false value when WiFi reconnection will control by your code or third party library e.g. WiFiManager
   Firebase.reconnectNetwork(true);
   Firebase.begin(&config, &auth);
   }
+  /* ----------------------------------------------------- */
   pinMode(slot_1, INPUT);
   pinMode(slot_2, INPUT);
   pinMode(slot_3, INPUT);
@@ -135,37 +154,38 @@ void setup()
   pinMode(ir_enter, INPUT);
   pinMode(ir_exit, INPUT);
   pinMode(buzzer, OUTPUT);
-  
+  /* ----------------------------------------------------- */
   myservo_enter.attach(servo_enter);
   myservo_exit.attach(servo_exit);
   myservo_enter.write(9);
   myservo_exit.write(9);
-  
+  /* ----------------------------------------------------- */
   LCD.clear();
   scroll(line1,line2);
   ReadSensorData1();
   if (WiFi.status() != WL_CONNECTED) {Update_Slots(); counter = S_total; ReadSensorData3();}
   else{Update_Slots(); counter = S_total; ReadSensorData2();}
- }
-
-
-
-
+ 
+}
 
 void loop()
-{  if (Firebase.ready() && (millis() - sendDataPrevMillis > 5000 || sendDataPrevMillis == 0))
+{
+    
+    // Firebase.ready() should be called repeatedly to handle authentication tasks.
+    if (Firebase.ready() && (millis() - sendDataPrevMillis > 5000 || sendDataPrevMillis == 0))
     { sendDataPrevMillis = millis();
       ReadSensorData2();
-    } else{
+    }
+    else{
       ReadSensorData3();
       }
 }
 /* It will update counter */
 void ReadSensorData1(){
-    
+
     S_1 = digitalRead(slot_1);
     String status1;
-    if(S_1==0){status1= "Engaged";}else{status1 = "Available";}
+    if(S_1==0){status1 = "Engaged";}else{status1 = "Available";}
 
     S_2 = digitalRead(slot_2);
     String status2;
@@ -335,13 +355,17 @@ void ReadSensorData2(){
     LCD.print("S_10: "+String(status10)+"    ");
     Update_Slots();
     ServoStatus();
+
 }
+
 void Update_Slots(){
+
     S_total = S_1 + S_2 + S_3 + S_4 + S_5 + S_6 + S_7 + S_8 + S_9 + S_10 ;
     Firebase.setString(fbdo,F("Sensors/Total_Slots"),S_total);
     LCD.setCursor(0,0);
     LCD.print("Total_Slots:"+String(counter)+"  ");
 }
+
 void ServoStatus(){
       
       if(digitalRead(ir_enter)==0 && (S_total > 0 && counter > 0)){
@@ -367,13 +391,16 @@ void ServoStatus(){
       } 
       if(counter==0){LCD.setCursor(1,1);
       LCD.print("Parking is Full");}
+  
 }
+
 void scroll(String line1, String line2){
   for(int i = 1 ; i <=line2.length();i++){
   LCD.setCursor(0, 0); // Seting the cursor on first row 
   LCD.print(line1); // To print line1 message
   LCD.setCursor(scrollCursor, 1); // Seting the cursor on first row and (scrolling from left end to right)
   LCD.print(line2.substring(stringStart,stringEnd)); // To print line1 first character "T"
+
   delay(230);
   
   LCD.clear(); // clear message
@@ -528,3 +555,5 @@ void ReadSensorData3(){
     Update_Slots();
     ServoStatus();
     delay(900);
+}
+
