@@ -1,20 +1,12 @@
 # **<p align="center">IoT-BASED CAR PARKING SYSTEM</p>**
 
-## Developed By: 
-
-- **Akash Bagwan** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akashbagwan/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](akashbagwan01@gmail.com)
-
-- **Jay Barode** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaybarode728/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](barodejay468@gmail.com)
-
-- **Surendra Prajapat** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/surendraprajapat18/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](prajapatsurendra78980@gmail.com)
-
 ## Introduction:
 An IoT-powered car parking system is an intelligent transportation system (ITS) that uses technology to optimize parking availability and efficiency. It typically comprises a network of sensors, cameras, databases, and software that detect and track vehicles in a parking lot. This information is then utilized to provide drivers with real-time updates on available parking slots and guide them to the nearest open spot using their device. The Smart Parking System (SPS) aims to reduce traffic congestion, enhance safety, and provide convenience for drivers.
 
 ## Block Diagram:
 
 <p align="center">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/0e9dd9d4-ac35-4885-9fa6-c3042e7f03d5" width="800" height="400">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/0e9dd9d4-ac35-4885-9fa6-c3042e7f03d5" width="750" height="400">
 </p>
 
 ### **<p align="center">Block Diagram</p>**
@@ -53,7 +45,7 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
 ## Circuit Diagram:
 
 <p align="center">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/a7c51645-0e90-4ebf-91f4-61aede5d21f7" width="800" height="400">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/a7c51645-0e90-4ebf-91f4-61aede5d21f7" width="750" height="400">
 </p>
 
 ### **<p align="center">Circuit Diagram</p>**
@@ -85,8 +77,8 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
 
 <p align="center">
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/935ce74a-7230-4890-ba88-45e9d2149736" width="300" height="250">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/eab48083-1244-4c49-b087-212878f6a302" width="300" height="250">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/5900b484-0f81-4484-9b03-203ed079ce6e" width="300" height="250">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/eab48083-1244-4c49-b087-212878f6a302" width="280" height="250">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/5900b484-0f81-4484-9b03-203ed079ce6e" width="250" height="250">
 </p>
 
 ### **<p align="center">PCB Layout and Circuit Diagram</p>**
@@ -94,9 +86,8 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
 The circuit presented above serves a specific purpose, to detect parking slot availability. When the parking slot is **empty**, a **green LED** turns on, and when the slot is **occupied**, the green LED turns off and the **red LED** turns on. This is achieved by using the BC337 transistor for switching and designing one NOT Gate. The LEDs are switched based on the data obtained from an IR Sensor placed at the slot. To cover 10 parking slots, we created 10 replicas of this circuit module, which receives input from the respective IR sensor module and acts accordingly.
 
 
-In the provided code snippet, several important parts can be identified:
 
-## Code:
+## Main Code Function:
 
 
 ### Setup Function
@@ -160,6 +151,10 @@ void ServoStatus() {
 
 The picture above depicts the outcome we obtained upon the successful completion of our project. Our system is designed to display the status of a parking slot on both the Android application and a physical LED. When a slot is occupied, it is displayed as "**Engaged**" on the Android app and the corresponding LED glows red. Conversely, when a slot is free, it is displayed as "**Available**" on the app and the LED glows green.
 
+
+## Conclusion:
+Our IoT-Based Car Parking System represents a significant advancement in parking management technology. By harnessing the power of IoT, we have created a solution that addresses the challenges of urban parking while improving efficiency, safety, and user convenience. As cities continue to grow, innovative solutions like ours will play a crucial role in shaping the future of urban mobility.
+
 ## References: 
     1. Aggarwal, S. (2011). Smart Parking System using Sensors and Networking Technologies. International Journal of Electronics and Computer Science Engineering (IJECSE), 1(2), 1-8.
     2. Kumar, S. (2023). Smart Car Parking System. International Journal for Research in Applied Science and Engineering Technology (IJRASTE), 11(5), 707-711.
@@ -173,3 +168,10 @@ The picture above depicts the outcome we obtained upon the successful completion
     7. Servo Motors and Industrial Control Theor
 
 
+## Developed By: 
+
+- **Akash Bagwan** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akashbagwan/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](akashbagwan01@gmail.com)
+
+- **Jay Barode** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaybarode728/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](barodejay468@gmail.com)
+
+- **Surendra Prajapat** [![LinkedIn](https://img.shields.io/badge/linkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/surendraprajapat18/) [![Gmail](https://img.shields.io/badge/Gmail-%230077B5.svg?logo=gmail&logoColor=white)](prajapatsurendra78980@gmail.com)
