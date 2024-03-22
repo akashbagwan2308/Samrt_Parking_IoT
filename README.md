@@ -1,12 +1,12 @@
 # **<p align="center">IoT-BASED SMART PARKING </p>**
 
 ## Introduction:
-An IoT-powered smart parking system is an intelligent transportation system (ITS) that uses technology to optimize parking availability and efficiency. It typically comprises a network of sensors, cameras, database and software that detect and track vehicles in the parking lot. This information is then utilized to provide drivers with real-time updates on available parking slots and guide them to the nearest open spot using their device. The Smart Parking System (SPS) aims to reduce traffic congestion, enhance safety, and provide convenience for drivers.
+An IoT-powered smart parking system is an intelligent transportation system (ITS) that uses technology to optimize parking availability and efficiency. It typically comprises a network of sensors, cameras, databases, and software that detect and track vehicles in the parking lot. This information is then utilized to provide drivers with real-time updates on available parking slots and guide them to the nearest open spot using their device. The Smart Parking System (SPS) aims to reduce traffic congestion, enhance safety, and provide convenience for drivers.
 
 ## Block Diagram:
 
 <p align="center">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/0e9dd9d4-ac35-4885-9fa6-c3042e7f03d5" width="750" height="400">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/0e9dd9d4-ac35-4885-9fa6-c3042e7f03d5">
 </p>
 
 ### <p align="center">Block Diagram</p>
