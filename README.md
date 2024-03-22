@@ -9,7 +9,7 @@ An IoT-powered smart parking system is an intelligent transportation system (ITS
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/0e9dd9d4-ac35-4885-9fa6-c3042e7f03d5" width="510" height="300">
 </p>
 
-<p align="center">Block Diagram</p>
+**<p align="center">Block Diagram</p>**
 
 ### Description of Block Diagram:
 
@@ -48,7 +48,7 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/a7c51645-0e90-4ebf-91f4-61aede5d21f7" width="447" height="300">
 </p>
 
-<p align="center">Circuit Diagram</p>
+**<p align="center">Circuit Diagram</p>**
 
 ### Pin Connections:
 
@@ -76,12 +76,12 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
 ## PCB Layout and Circuit Diagram:
 
 <p align="center">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/935ce74a-7230-4890-ba88-45e9d2149736" width="223" height="200">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/eab48083-1244-4c49-b087-212878f6a302" width="336" height="200">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/5900b484-0f81-4484-9b03-203ed079ce6e" width="400" height="200">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/935ce74a-7230-4890-ba88-45e9d2149736" width="300" height="200">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/eab48083-1244-4c49-b087-212878f6a302" width="300" height="200">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/5900b484-0f81-4484-9b03-203ed079ce6e" width="350" height="200">
 </p>
 
-<p align="center">PCB Layout and Circuit Diagram</p>
+**<p align="center">PCB Layout and Circuit Diagram</p>**
 
 <br>The circuit presented above serves a specific purpose, to detect parking slot availability. When the parking slot is **empty**, a **green LED** turns on, and when the slot is **occupied**, the green LED turns off and the **red LED** turns on. This is achieved by using the BC337 transistor for switching and designing one NOT Gate. The LEDs are switched based on the data obtained from an IR Sensor placed at the slot. To cover 10 parking slots, we created 10 replicas of this circuit module, which receives input from the respective IR sensor module and acts accordingly.
 
@@ -147,9 +147,7 @@ void ServoStatus() {
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/a15ca11f-4651-48df-8031-c5d033cda9b7" width="232" height="450">
 </p>
 
-<p align="center">
-  Result (Parking and IoT App)
-</p>
+**<p align="center">Result (Parking and IoT App)</p>**
 
 <br>The picture above depicts the outcome we obtained upon the successful completion of our project. Our system is designed to display the status of a parking slot on both the Android application and a physical LED. When a slot is occupied, it is displayed as "**Engaged**" on the Android app, and the corresponding LED glows red. Conversely, when a slot is free, it is displayed as "**Available**" on the app, and the LED glows green.
 
