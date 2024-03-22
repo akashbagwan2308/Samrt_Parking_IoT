@@ -78,8 +78,9 @@ The block diagram of the IoT-based Smart Parking system using ESP-32, IR sensors
 <p align="center">
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/935ce74a-7230-4890-ba88-45e9d2149736" width="300" height="200">
   <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/eab48083-1244-4c49-b087-212878f6a302" width="300" height="200">
-  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/5900b484-0f81-4484-9b03-203ed079ce6e" width="350" height="200">
+  <img src="https://github.com/akashbagwan2308/Samrt_Parking_IoT/assets/97840357/908fb543-5d7a-491c-aa99-9b714c60b89e" width="350" height="200">
 </p>
+
 
 **<p align="center">PCB Layout and Circuit Diagram</p>**
 
